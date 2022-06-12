@@ -1,7 +1,7 @@
 # eth-keylist-checker
 
 This script periodically checks the balances of addresses corresponding to given private keys, and sends them to single address.
-At this moment supports `Ethereum` and `Polygon`. Also works with testnets `Rinkeby` and `Mumbai`. Built wth Python, desgined for RaspberryPi and Windows.
+At this moment supports `Ethereum` and `Polygon`. Also works with testnets `Rinkeby` and `Mumbai`. Built wth Python, designed for RaspberryPi and Windows.
 
 ## Description:
 Script checks the balances of addresses corresponding to the private keys defined in `keylist.json`
@@ -9,7 +9,7 @@ on the networks chosen in `CHOSEN_ETH_NETWORKS` in `DELAYS` time delays in `sett
 After any positive balance (over estimated tx fee) is found, the transaction to address defined in
 `secrets.json` is sent. After the transaciton is sent, log is saved in `logs/` directory.
 
-Script utilizes `threading`, `asyncio` and `sched` modules, as well as asynchronous class functions from web3.py, to minimalize delays and make possible to run it efficiently on Raspberry Pi Zero W.
+Script utilizes threading, asyncio and sched modules, as well as asynchronous class functions from web3.py, to minimalize delays and make possible to run it efficiently on Raspberry Pi Zero W.
 
 ## Requirements:
 - Python 3.8
