@@ -4,7 +4,7 @@ This script periodically checks the balances of addresses corresponding to given
 At this moment supports `Ethereum` and `Polygon`. Also works with testnets `Rinkeby` and `Mumbai`. Built wth Python, desgined for RaspberryPi and Windows.
 
 ## Description:
-Script checks the balances of addresses corresponding to the private keys defined in `keylist.json `
+Script checks the balances of addresses corresponding to the private keys defined in `keylist.json`
 on the networks chosen in `CHOSEN_ETH_NETWORKS` in `DELAYS` time delays in `settings.py`.
 After any positive balance (over estimated tx fee) is found, the transaction to address defined in
 `secrets.json` is sent. After the transaciton is sent, log is saved in `logs/` directory.
